@@ -7,6 +7,8 @@ from solar_vis import *
 from solar_model import *
 from solar_input import *
 
+gui = GUI()
+
 perform_execution = False
 """Флаг цикличности выполнения расчёта"""
 
@@ -36,7 +38,7 @@ def execution():
     global displayed_time
     recalculate_space_objects_positions(space_objects, time_step.get())
     for body in space_objects:
-        update_object_position(space, body)
+        GUI.update_object_position(gui, space, body)
     physical_time += time_step.get()
     displayed_time.set("%.1f" % physical_time + " seconds gone")
 
@@ -81,13 +83,13 @@ def open_file_dialog():
     in_filename = askopenfilename(filetypes=(("Text file", ".txt"),))
     space_objects = read_space_objects_data_from_file(in_filename)
     max_distance = max([max(abs(obj.x), abs(obj.y)) for obj in space_objects])
-    calculate_scale_factor(max_distance)
+    GUI.calculate_scale_factor(gui, max_distance)
 
     for obj in space_objects:
         if obj.type == 'star':
-            create_star_image(space, obj)
+            GUI.create_star_image(gui, space, obj)
         elif obj.type == 'planet':
-            create_planet_image(space, obj)
+            GUI.create_planet_image(gui, space, obj)
         else:
             raise AssertionError()
 
@@ -117,7 +119,7 @@ def main():
 
     root = tkinter.Tk()
     # космическое пространство отображается на холсте типа Canvas
-    space = tkinter.Canvas(root, width=window_width, height=window_height, bg="black")
+    space = tkinter.Canvas(root, width=gui.window_width, height=gui.window_height, bg="black")
     space.pack(side=tkinter.TOP)
     # нижняя панель с кнопками
     frame = tkinter.Frame(root)
