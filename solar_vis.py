@@ -1,13 +1,23 @@
 # coding: utf-8
 # license: GPLv3
 
+import tkinter
+from tkinter.filedialog import *
+
+from solar_model import *
+
 """Модуль визуализации.
 Нигде, кроме этого модуля, не используются экранные координаты объектов.
 Функции, создающие гaрафические объекты и перемещающие их на экране, принимают физические координаты
 """
-class GUI:
 
+
+class GUI:
     def __init__(self):
+
+        self.start_button = None
+
+        self.space = None
 
         self.header_font = "Arial-16"
         """Шрифт в заголовке"""
@@ -23,6 +33,13 @@ class GUI:
         Тип: float
         Мера: количество пикселей на один метр."""
 
+        self.displayed_time = None
+        """Отображаемое на экране время.
+        Тип: переменная tkinter"""
+
+        self.load_file_button = None
+        self.save_file_button = None
+        self.time_label = None
 
     def calculate_scale_factor(self, max_distance):
         """Вычисляет значение глобальной переменной **scale_factor** по данной характерной длине"""
@@ -116,6 +133,51 @@ class GUI:
             space.coords(body.image, self.window_width + r, self.window_height + r,
                          self.window_width + 2*r, self.window_height + 2*r)  # положить за пределы окна
         space.coords(body.image, x - r, y - r, x + r, y + r)
+
+    @staticmethod
+    def main(solar_system, inout_system, gui):
+        """Главная функция главного модуля.
+        Создаёт объекты графического дизайна библиотеки tkinter: окно, холст, фрейм с кнопками, кнопки.
+        """
+
+        print('Modelling started!')
+
+        root = tkinter.Tk()
+
+        # космическое пространство отображается на холсте типа Canvas
+        gui.space = tkinter.Canvas(root, width=gui.window_width, height=gui.window_height, bg="black")
+        gui.space.pack(side=tkinter.TOP)
+        # нижняя панель с кнопками
+        frame = tkinter.Frame(root)
+        frame.pack(side=tkinter.BOTTOM)
+
+        gui.start_button = tkinter.Button(frame, text="Start", command=solar_system.start_execution, width=6)
+        gui.start_button.pack(side=tkinter.LEFT)
+
+        solar_system.time_step = tkinter.DoubleVar()
+        solar_system.time_step.set(1)
+        solar_system.time_step_entry = tkinter.Entry(frame, textvariable=solar_system.time_step)
+        solar_system.time_step_entry.pack(side=tkinter.LEFT)
+
+        solar_system.time_speed = tkinter.DoubleVar()
+        scale = tkinter.Scale(frame, variable=solar_system.time_speed, orient=tkinter.HORIZONTAL)
+        scale.pack(side=tkinter.LEFT)
+
+        gui.load_file_button = tkinter.Button(frame, text="Open file...", command=lambda: inout_system.open_file_dialog(solar_system, gui))
+        gui.load_file_button.pack(side=tkinter.LEFT)
+        gui.save_file_button = tkinter.Button(frame, text="Save to file...", command=lambda: inout_system.save_file_dialog(solar_system))
+        gui.save_file_button.pack(side=tkinter.LEFT)
+
+        gui.displayed_time = tkinter.StringVar()
+        gui.displayed_time.set(str(solar_system.physical_time) + " seconds gone")
+        gui.time_label = tkinter.Label(frame, textvariable=gui.displayed_time, width=30)
+        gui.time_label.pack(side=tkinter.RIGHT)
+
+        root.mainloop()
+        print('Modelling finished!')
+
+
+gui = GUI()
 
 
 if __name__ == "__main__":

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb52aaba-dd94-4023-9e52-26a17ec21160" name="Changes" comment="">
+    <list default="true" id="eb52aaba-dd94-4023-9e52-26a17ec21160" name="Changes" comment="Added GUI class for visualisation!">
+      <change afterPath="$PROJECT_DIR$/earth moon and the sun.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goida" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_input.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_objects.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/solar_vis.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_vis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +23,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="OOP" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -33,16 +42,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.solar_input.executor&quot;: &quot;Run&quot;,
-    &quot;Python.solar_main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.solar_input.executor": "Run",
+    "Python.solar_main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "OOP",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Yap/SolarVisualiser"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Yap\SolarVisualiser" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="solar_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SolarVisualiser" />
@@ -100,12 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1719322825367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added GUI class for visualisation!">
+      <option name="closed" value="true" />
+      <created>1719435567468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719435567468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Unfixed code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unfixed code" />
+    <MESSAGE value="Added GUI class for visualisation!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GUI class for visualisation!" />
   </component>
 </project>
