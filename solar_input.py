@@ -15,7 +15,6 @@ class InOut_system:
 
         **input_filename** — имя входного файла
         """
-
         objects = []
         with open(input_filename) as input_file:
             for line in input_file:
@@ -59,6 +58,7 @@ class InOut_system:
         star.m = float(words[3])
         star.x, star.y = float(words[4]), float(words[5])
         star.Vx, star.Vy = float(words[6]), float(words[7])
+
     @staticmethod
     def parse_planet_parameters(line, planet):
         """Считывает данные о планете из строки.
@@ -135,10 +135,7 @@ class InOut_system:
         out_filename = asksaveasfilename(filetypes=(("Text file", ".txt"),))
         self.write_space_objects_data_to_file(out_filename, solar_system.space_objects)
 
-
-
 inout_system = InOut_system()
-
 
 if __name__ == "__main__":
     print("This module is not for direct call!")

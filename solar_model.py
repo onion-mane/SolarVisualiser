@@ -15,14 +15,11 @@ class Solar_system:
         """Физическое время от начала расчёта.
         Тип: float"""
 
-
-
         self.time_step = None
         """Шаг по времени при моделировании.
         Тип: float"""
 
         self.time_speed = None
-
         self.time_step = None
         self.time_step_entry = None
         self.space_objects = []
@@ -116,8 +113,6 @@ class Solar_system:
         gui.start_button['text'] = "Start"
         gui.start_button['command'] = self.start_execution
         print('Paused execution.')
-
-
 
 solar_system = Solar_system()
 

@@ -4,6 +4,7 @@
 class System_Objects:
 
     type = "Unknown"
+    """Тип тела"""
 
     m = 0
     """Масса тела"""
@@ -26,8 +27,6 @@ class System_Objects:
     Fy = 0
     """Сила по оси **y**"""
 
-
-
     color = "red"
     """Цвет звезды"""
 
@@ -46,7 +45,6 @@ class Star(System_Objects):
     R = 5
     """Радиус тела"""
 
-
 class Planet(System_Objects):
     """Тип данных, описывающий планету.
     Содержит массу, координаты, скорость планеты,
@@ -58,4 +56,3 @@ class Planet(System_Objects):
 
     R = 5
     """Радиус тела"""
-

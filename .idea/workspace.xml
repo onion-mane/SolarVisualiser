@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb52aaba-dd94-4023-9e52-26a17ec21160" name="Changes" comment="Added GUI class for visualisation!">
-      <change afterPath="$PROJECT_DIR$/bilet_3.txt" afterDir="false" />
+    <list default="true" id="eb52aaba-dd94-4023-9e52-26a17ec21160" name="Changes" comment="=">
+      <change afterPath="$PROJECT_DIR$/UML Classes.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/goida" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solar_objects.py" beforeDir="false" afterPath="$PROJECT_DIR$/solar_objects.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python.scratch.executor": "Run",
-    "Python.solar_input.executor": "Run",
-    "Python.solar_main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Yap/SolarVisualiser"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.solar_input.executor&quot;: &quot;Run&quot;,
+    &quot;Python.solar_main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Yap/SolarVisualiser&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Python"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Yap\SolarVisualiser" />
@@ -107,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.solar_main" />
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.solar_main" />
         <item itemvalue="Python.solar_main" />
         <item itemvalue="Python.solar_main" />
@@ -147,13 +149,22 @@
       <option name="project" value="LOCAL" />
       <updated>1719435567468</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="=">
+      <option name="closed" value="true" />
+      <created>1719516901439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719516901439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Unfixed code" />
     <MESSAGE value="Added GUI class for visualisation!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GUI class for visualisation!" />
+    <MESSAGE value="=" />
+    <option name="LAST_COMMIT_MESSAGE" value="=" />
   </component>
 </project>
